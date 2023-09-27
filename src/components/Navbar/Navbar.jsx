@@ -14,22 +14,22 @@ const Navbar = () => {
       <div className="nav-buttons">
         <ul>
           <li>
-            <a href="Home">Home</a>
+            <a href="/Home">Home</a>
           </li>
           <li>
-            <a href="Admin">Admin</a>
+            <a href="/Admin">Admin</a>
           </li>
           <li>
-            <a href="Benselcom">Benselcom</a>
+            <a href="/Benselcom">Benselcom</a>
           </li>
           <li>
-            <a href="ComMortage">Community Mortgage</a>
+            <a href="/CommunityMortage">Community Mortgage</a>
           </li>
           <li>
-            <a href="ComOrganizer">Community Organizer</a>
+            <a href="/CommunityOrganizer">Community Organizer</a>
           </li>
           <li>
-            <a href="Demolition">Demolition</a>
+            <a href="/Demolition">Demolition</a>
           </li>
           <li>
             <a href="search">

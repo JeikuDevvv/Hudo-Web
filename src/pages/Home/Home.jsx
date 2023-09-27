@@ -1,6 +1,6 @@
 import React from "react";
 
-import DisplayImages from "../../components/DisplayImages/DisplayImages";
+import { DisplayImages } from "../../components";
 
 const Home = () => {
   return (
