@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 
 import { logo } from "../../constants/images";
 import { HiOutlineSearch } from "react-icons/hi";
 
 const Navbar = () => {
+  const [activeLink, setActiveLink] = useState(window.location.pathname);
+
+  const handleLinkClick = (path) => {
+    setActiveLink(path);
+  };
+
+  const navLinks = [
+    { path: "/Home", text: "Home" },
+    { path: "/Admin", text: "Admin" },
+    { path: "/Benselcom", text: "Benselcom" },
+    { path: "/CommunityMortage", text: "Community Mortgage" },
+    { path: "/CommunityOrganizer", text: "Community Organizer" },
+    { path: "/Demolition", text: "Demolition" },
+  ];
+
   return (
     <nav className="navbar">
       <div className="logo-container">
@@ -13,24 +28,15 @@ const Navbar = () => {
       </div>
       <div className="nav-buttons">
         <ul>
-          <li>
-            <a href="/Home">Home</a>
-          </li>
-          <li>
-            <a href="/Admin">Admin</a>
-          </li>
-          <li>
-            <a href="/Benselcom">Benselcom</a>
-          </li>
-          <li>
-            <a href="/CommunityMortage">Community Mortgage</a>
-          </li>
-          <li>
-            <a href="/CommunityOrganizer">Community Organizer</a>
-          </li>
-          <li>
-            <a href="/Demolition">Demolition</a>
-          </li>
+          {navLinks.map((link) => (
+            <NavItem
+              key={link.path}
+              path={link.path}
+              text={link.text}
+              active={activeLink === link.path}
+              onClick={handleLinkClick}
+            />
+          ))}
           <li>
             <a href="search">
               <HiOutlineSearch />
@@ -39,6 +45,20 @@ const Navbar = () => {
         </ul>
       </div>
     </nav>
+  );
+};
+
+const NavItem = ({ path, text, active, onClick }) => {
+  const handleClick = () => {
+    onClick(path);
+  };
+
+  return (
+    <li>
+      <a href={path} onClick={handleClick} className={active ? "active" : ""}>
+        {text}
+      </a>
+    </li>
   );
 };
 

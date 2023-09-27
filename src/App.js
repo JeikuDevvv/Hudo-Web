@@ -2,7 +2,14 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 
 import { Navbar } from "./components";
-import { Home, Admin } from "./pages";
+import {
+  Home,
+  Admin,
+  Benselcom,
+  CommunityOrganizer,
+  CommunityMortage,
+  Demolition,
+} from "./pages";
 
 function App() {
   const [route, setRoute] = useState(window.location.pathname);
@@ -27,6 +34,18 @@ function App() {
       break;
     case "/Admin":
       content = <Admin />;
+      break;
+    case "/Benselcom":
+      content = <Benselcom />;
+      break;
+    case "/CommunityMortage":
+      content = <CommunityMortage />;
+      break;
+    case "/CommunityOrganizer":
+      content = <CommunityOrganizer />;
+      break;
+    case "/Demolition":
+      content = <Demolition />;
       break;
     default:
       content = <Home />;
