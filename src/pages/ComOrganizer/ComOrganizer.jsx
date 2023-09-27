@@ -4,7 +4,7 @@ import "./ComOrganizer.css";
 const ComOrganizer = () => {
   return (
     <div className="main">
-      <h1>Com Organizer</h1>
+      <p>Com Organizer</p>
     </div>
   );
 };
