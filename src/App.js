@@ -1,10 +1,11 @@
 import React from "react";
-import cityHall from "./constants/images.js";
+import { Navbar } from "./components";
+import "./App.css";
 
 function App() {
   return (
     <div>
-      <img src={cityHall} alt="wtf" />
+      <Navbar />
     </div>
   );
 }
