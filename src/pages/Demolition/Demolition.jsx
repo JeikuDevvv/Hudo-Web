@@ -4,7 +4,7 @@ import "./Demolition.css";
 const Demolition = () => {
   return (
     <div className="main">
-      <h1>Demolition</h1>
+      <p>Demolition</p>
     </div>
   );
 };

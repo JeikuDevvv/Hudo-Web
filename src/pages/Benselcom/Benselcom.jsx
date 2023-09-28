@@ -4,7 +4,7 @@ import "./Benselcom.css";
 const Benselcom = () => {
   return (
     <div className="main">
-      <h1>Benselcom</h1>
+      <p>Benselcom</p>
     </div>
   );
 };
