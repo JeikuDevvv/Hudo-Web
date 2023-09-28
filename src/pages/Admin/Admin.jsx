@@ -1,15 +1,12 @@
 import React from "react";
 import "./Admin.css";
 
-import { TextInputField } from "../../components";
+import { InOutForm } from "../../container";
 
 const Admin = () => {
   return (
-    <div className="main">
-      <dev>
-        <TextInputField labelText={"Title"} width="500px" />
-      </dev>
-      <p>Admin</p>
+    <div className="main-container">
+      <InOutForm />
     </div>
   );
 };

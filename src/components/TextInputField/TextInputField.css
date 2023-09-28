@@ -18,7 +18,7 @@
 }
 
 .text-style {
-    font-size: 12px;
+    font-size: 15px;
     padding-left: 10px;
     color: rgba(0, 0, 0, 0.70);
 }
@@ -27,7 +27,7 @@
     padding-left: 10px;
     width: 100%; 
     height: 30px;
-    font-size: 12px;
+    font-size: 15px;
     border: none;
     outline: none;
     background-color: #f2f2f2;

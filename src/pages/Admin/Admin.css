@@ -1,10 +1,9 @@
-.main {
-    height: 100%;
+.main-container {
+    height: 955px;
     width: 100%;
-    background-color: white;
+    background-color: rgba(75, 208, 51, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
     flex-direction: column;
 }
