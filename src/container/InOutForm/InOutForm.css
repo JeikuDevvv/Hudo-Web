@@ -1,68 +1,69 @@
 
-.content-container {
-    height: 80%;
-    width: 80%;
-    display: flex;  
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(180deg, rgba(193, 222, 255, 0.10) 75.53%, rgba(239, 239, 239, 0.00) 100%);
-  }
+    .content-container {
+        height: 80%;
+        width: 80%;
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(180deg, rgba(193, 222, 255, 0.10) 75.53%, rgba(239, 239, 239, 0.00) 100%);
+    }
 
-.form-container {
-    width: 90%;
-    margin: auto;
-}
-  
-  .form-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
-  .radio-buttons {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    width: 49%;
-  }
-  
-  .radio-buttons button {
-    background-color: #fff;
-    border: 1px solid #333;
-    border-radius: 5%;
-    padding: 8px 15px;
-    cursor: pointer;
-    width: 49%;
-  }
-  
-  .radio-buttons button.active {
-    background-color: rgba(4, 254, 2, 0.1);
-    color: #333;
-  }
-  
-  .input-attachment-container {
-    width: 100%;
-    border: 2px dashed #ccc;
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  .input-attachment {
-    display: inline-block;
-  }
-  
-  .input-attachment-label {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  input {
-    color: #333;
-  }
+    .form-container {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .form-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    .radio-buttons {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        width: 49%;
+    }
+    
+    .radio-buttons .button {
+        background-color: #fff;
+        border: 1px solid #333;
+        border-radius: 5%;
+        padding: 8px 15px;
+        cursor: pointer;
+        width: 49%;
+        
+    }
+    
+    .radio-buttons .button.active {
+        background-color: rgba(4, 254, 2, 0.1);
+        color: #333;
+    }
+    
+    .input-attachment-container {
+        width: 100%;
+        border: 2px dashed #ccc;
+        background-color: #fff;
+        padding: 20px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .input-attachment {
+        display: inline-block;
+    }
+    
+    .input-attachment-label {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    input {
+        color: #333;
+    }
 
-  .titlePage {
-    padding-bottom: 10px;
-  }
+    .titlePage {
+        padding-bottom: 10px;
+    }

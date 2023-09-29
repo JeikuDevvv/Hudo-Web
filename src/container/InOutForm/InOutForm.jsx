@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDropzone } from "react-dropzone";
 import "./InOutForm.css";
 
-import { TextInputField } from "../../components";
+import { TextInputField, PrimaryButton } from "../../components";
 import { IoIosAddCircleOutline } from "react-icons/io";
 
 const InOutForm = () => {
@@ -76,20 +76,25 @@ const InOutForm = () => {
             width={"49%"}
           />
           <div className="radio-buttons">
-            <button
+            <PrimaryButton
               type="button"
               onClick={() => handleTypeToggle("incoming")}
               className={formData.type === "incoming" ? "active" : ""}
+              buttonText={"Incoming"}
+              width={"49%"}
             >
               Incoming
-            </button>
-            <button
+            </PrimaryButton>
+
+            <PrimaryButton
               type="button"
               onClick={() => handleTypeToggle("outgoing")}
               className={formData.type === "outgoing" ? "active" : ""}
+              buttonText={"Outgoing"}
+              width={"47%"}
             >
               Outgoing
-            </button>
+            </PrimaryButton>
           </div>
         </div>
         <div className="form-row">
@@ -105,6 +110,10 @@ const InOutForm = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div className="form-row">
+          <PrimaryButton buttonText={"Clear"} type={"button"} />
+          <PrimaryButton buttonText={"Submit"} type={"submit"} />
         </div>
       </div>
     </div>

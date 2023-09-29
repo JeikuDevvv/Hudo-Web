@@ -1,10 +1,13 @@
 import React from "react";
 import "./Benselcom.css";
 
+import { PrimaryButton, TextInputField } from "../../components";
+
 const Benselcom = () => {
   return (
     <div className="main">
-      <p>Benselcom</p>
+      <PrimaryButton buttonText={"Benselcom"} type={"button"} />
+      <TextInputField labelText={"Benselcom"} />
     </div>
   );
 };
