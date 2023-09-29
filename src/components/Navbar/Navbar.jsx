@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 
-import { logo } from "../../constants/images";
+import { HudoLogo } from "../../constants/images";
 import { HiOutlineSearch } from "react-icons/hi";
 
 const Navbar = () => {
@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo-container">
-        <img src={logo} alt="Housing & Urban Development Office" />
+        <img src={HudoLogo} alt="Housing & Urban Development Office" />
         <p>Housing & Urban Development Office</p>
       </div>
       <div className="nav-buttons">

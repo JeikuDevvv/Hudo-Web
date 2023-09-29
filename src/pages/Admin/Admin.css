@@ -1,7 +1,6 @@
 .main-container {
     height: 955px;
     width: 100%;
-    background-color: rgba(75, 208, 51, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
