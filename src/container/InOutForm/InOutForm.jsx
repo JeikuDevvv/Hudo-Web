@@ -5,6 +5,8 @@ import "./InOutForm.css";
 import { TextInputField, PrimaryButton } from "../../components";
 import { IoIosAddCircleOutline } from "react-icons/io";
 
+import { validateForm, clearForm, submitForm } from "../../utils/formUtils";
+
 const InOutForm = () => {
   const [formData, setFormData] = useState({
     title: "",
@@ -28,6 +30,16 @@ const InOutForm = () => {
 
   const handleTypeToggle = (type) => {
     setFormData({ ...formData, type });
+  };
+
+  const handleClear = () => {
+    clearForm(setFormData);
+  };
+
+  const handleSubmit = () => {
+    if (validateForm(formData)) {
+      submitForm(formData);
+    }
   };
 
   return (
@@ -112,8 +124,27 @@ const InOutForm = () => {
           </div>
         </div>
         <div className="form-row">
-          <PrimaryButton buttonText={"Clear"} type={"button"} />
-          <PrimaryButton buttonText={"Submit"} type={"submit"} />
+          <div style={{ width: "49%" }} />
+          <div
+            style={{
+              width: "49%",
+              display: "flex",
+              justifyContent: "space-between",
+            }}
+          >
+            <PrimaryButton
+              buttonText={"Clear"}
+              type={"button"}
+              width={"49%"}
+              onClick={handleClear}
+            />
+            <PrimaryButton
+              buttonText={"Submit"}
+              type={"submit"}
+              width={"47%"}
+              onClick={handleSubmit}
+            />
+          </div>
         </div>
       </div>
     </div>
