@@ -1,1 +1,1 @@
-export { default as InOutForm } from "./Admin/InOutForm/InOutForm.jsx";
+export { default as InOutForm } from "./Admin/Incoming_Outgoing/InOutForm.jsx";

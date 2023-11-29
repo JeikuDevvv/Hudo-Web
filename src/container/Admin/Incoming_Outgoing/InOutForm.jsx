@@ -24,7 +24,11 @@ const InOutForm = () => {
 
   const { getRootProps, getInputProps } = useDropzone({
     onDrop,
-    accept: ".jpg, .jpeg, .png, .pdf",
+    accept: {
+      "image/png": [".png"],
+      "image/jpeg": [".jpg", ".jpeg"],
+      "application/pdf": [".pdf", ".docs", ".docxs"],
+    },
     multiple: false,
   });
 
